@@ -1,0 +1,24 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [{
+			"path": "page/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "page/webview/index",
+			"style": {
+				"navigationBarTitleText": "webview"
+			}
+		}
+	],
+	"tabBar": {},
+	"subPackages": [],
+	"globalStyle": {
+		"navigationBarTitleText": "vue2",
+		"navigationBarBackgroundColor": "#fff"
+	}
+}
