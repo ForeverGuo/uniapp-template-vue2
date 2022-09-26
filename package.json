@@ -12,7 +12,7 @@
   },
   "scripts": {
     "serve": "npm run install",
-    "lint": "eslint --fix --ext .js,.vue",
+    "lint": "eslint --ext .js,.vue",
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
   "husky": {
