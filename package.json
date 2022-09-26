@@ -1,8 +1,17 @@
 {
-  "name": "{{name}}",
-  "version": "{{version}}",
-  "description": "{{description}}",
+  "name": "grant",
+  "version": "",
+  "description": "",
   "main": "main.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.js": "eslint --ext .js",
+    "**/*.vue": "eslint --ext .vue"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "dayjs": "^1.10.5",
@@ -11,9 +20,24 @@
     "vuex": "^3.6.2"
   },
   "scripts": {
-    "serve": "npm run install"
+    "serve": "npm run install",
+    "lint": "eslint --fix --ext .js,.vue"
   },
-  "keywords": ["uniapp", "vue2"],
-  "author": "{{author}}",
-  "license": "ISC"
+  "keywords": [
+    "uniapp",
+    "vue2"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vue/cli-plugin-eslint": "^4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.2.1"
+  }
 }
