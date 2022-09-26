@@ -13,7 +13,5 @@
   ],
   "files.associations": {
     "*.art": "html"
-  },
-  "stylelint.enable": true,
-  "stylelint.validate": ["css", "scss", "vue"]
+  }
 }

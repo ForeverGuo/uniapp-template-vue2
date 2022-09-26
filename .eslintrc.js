@@ -5,6 +5,7 @@ module.exports = {
     node: true,
     es6: true
   },
+  // eslint 与 prettier 冲突 使用 prettier eslint:recommended
   extends: ['plugin:vue/essential', 'plugin:vue/recommended', 'plugin:prettier/recommended', '@vue/prettier'],
   parserOptions: {
     parser: 'babel-eslint'
@@ -14,6 +15,6 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-var': 2,
-    indent: ['off', 2]
+    indent: [2, 2]
   }
 }
