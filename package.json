@@ -12,8 +12,11 @@
     }
   },
   "lint-staged": {
-    "*.js": "eslint --ext .js",
-    "*.vue": "eslint --ext .vue"
+    "*.{js,vue}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add -A"
+    ]
   },
   "dependencies": {
     "axios": "^0.21.1",
