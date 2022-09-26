@@ -3,6 +3,18 @@
   "version": "",
   "description": "",
   "main": "main.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dayjs": "^1.10.5",
+    "uview-ui": "^1.8.4",
+    "vue": "^2.6.12",
+    "vuex": "^3.6.2"
+  },
+  "scripts": {
+    "serve": "npm run install",
+    "lint": "eslint --fix --ext .js,.vue",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
+  },
   "husky": {
     "hooks": {
       "pre-commit": [
@@ -17,18 +29,6 @@
       "eslint --fix",
       "git add -A"
     ]
-  },
-  "dependencies": {
-    "axios": "^0.21.1",
-    "dayjs": "^1.10.5",
-    "uview-ui": "^1.8.4",
-    "vue": "^2.6.12",
-    "vuex": "^3.6.2"
-  },
-  "scripts": {
-    "serve": "npm run install",
-    "lint": "eslint --fix --ext .js,.vue",
-    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
   "keywords": [
     "uniapp",

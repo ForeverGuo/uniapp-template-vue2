@@ -9,7 +9,7 @@ import wxIsLogin from '@/components/wx_login/wx_login.js'
 import uView from 'uview-ui'
 Vue.use(uView)
 
-var ss = "134"   
+var ss = "134"    
 
 Vue.config.productionTip = false
 
