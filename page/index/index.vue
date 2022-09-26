@@ -1,13 +1,13 @@
 <template>
     <div class="main">
-        {{ msg }}   
+        {{ msg }}
     </div>
 </template>
 <script>
 export default {
     data() {
         return {
-            msg: 'hello uniapp vue2'
+            msg: 'hello uniapp vue2'   
         }
     }
 }
