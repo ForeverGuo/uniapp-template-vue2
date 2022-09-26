@@ -3,11 +3,15 @@
   "version": "",
   "description": "",
   "main": "main.js",
-  "pre-commit": [
-
-    "lint"
-
-  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.js": "eslint --ext .js",
+    "**/*.vue": "eslint --ext .vue"
+  },
   "dependencies": {
     "axios": "^0.21.1",
     "dayjs": "^1.10.5",
