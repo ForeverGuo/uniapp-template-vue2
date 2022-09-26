@@ -5,7 +5,10 @@
   "main": "main.js",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": [
+        "precommit-msg",
+        "lint-staged"
+      ]
     }
   },
   "lint-staged": {
@@ -21,7 +24,8 @@
   },
   "scripts": {
     "serve": "npm run install",
-    "lint": "eslint --fix --ext .js,.vue"
+    "lint": "eslint --fix --ext .js,.vue",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
   "keywords": [
     "uniapp",
