@@ -7,7 +7,7 @@
 export default {
   data() {
     return {
-      msg: 'hello uniapp vue2'
+        msg: 'hello uniapp vue2'  
     }
   }
 }
