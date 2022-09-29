@@ -1,7 +1,7 @@
 {
-  "name": "{{name}}",
-  "version": "{{version}}",
-  "description": "{{description}}",
+  "name": "grant",
+  "version": "",
+  "description": "",
   "main": "main.js",
   "dependencies": {
     "axios": "^0.21.1",
@@ -17,7 +17,7 @@
     "uniapp",
     "vue2"
   ],
-  "author": "{{author}}",
+  "author": "",
   "license": "ISC",
-  "devDependencies": "{{devDependencies}}"
+  "devDependencies": {}
 }
