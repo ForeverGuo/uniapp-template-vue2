@@ -15,7 +15,10 @@
   },
   "keywords": [
     "uniapp",
-    "vue2"
+    "vue2",
+    "eslint",
+    "prettier",
+    "husky"
   ],
   "author": "",
   "license": "ISC",
