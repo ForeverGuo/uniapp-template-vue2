@@ -10,12 +10,8 @@
 	import {
 		getLocation
 	} from '@/utils/util.js'
-	import CustomHead from '@/components/common/customHead.vue'
 	export default {
 		name: "index",
-		components: {
-			CustomHead
-		},
 		data() {
 			return {
 				url: '',
