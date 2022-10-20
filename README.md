@@ -1,6 +1,6 @@
 ## 项目安装
 
-git clone https://github.com/ForeverGuo/uniapp-template-vue2/tree/cli
+git clone https://github.com/ForeverGuo/uniapp-template-vue2/tree/cli   
 cd uniapp-template-vue2 
 npm install  
 npm run dev:h5(参考 package.json 中的命令)
