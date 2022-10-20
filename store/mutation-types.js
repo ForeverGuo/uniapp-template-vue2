@@ -1,2 +1,0 @@
-// COMMON
-export const SETUSERINFO = 'SETUSERINFO'

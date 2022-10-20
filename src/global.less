@@ -1,0 +1,108 @@
+/* 颜色变量 */
+
+/* 行为相关颜色 */
+@uni-color-primary: #FCA315;
+@uni-color-success: #4cd964;
+@uni-color-warning: #f0ad4e;
+@uni-color-error: #dd524d;
+
+/* 文字基本颜色 */
+@uni-text-color:#333;//基本色
+@uni-text-color-inverse:#fff;//反色
+@uni-text-color-grey:#999;//辅助灰色，如加载更多的提示信息
+@uni-text-color-placeholder: #808080;
+@uni-text-color-disable:#c0c0c0;
+@uni-text-color-primary: #FCA315;
+
+/* 背景颜色 */
+@uni-bg-color:#ffffff;
+@uni-bg-color-grey:#f2f2f2;
+@uni-bg-color-hover:#f1f1f1;//点击状态颜色
+@uni-bg-color-mask:rgba(0, 0, 0, 0.4);//遮罩颜色
+
+/* 边框颜色 */
+@uni-border-color:#c8c7cc;
+
+/* 尺寸变量 */
+
+/* 文字尺寸 */
+@uni-font-size-sm:24rpx;
+@uni-font-size-base:28rpx;
+@uni-font-size-lg:32rpx;
+@uni-font-size-llg:36rpx;
+@uni-font-size-lllg:48rpx;
+
+/* 图片尺寸 */
+@uni-img-size-sm:40rpx;
+@uni-img-size-base:52rpx;
+@uni-img-size-lg:80rpx;
+
+/* Border Radius */
+@uni-border-radius-sm: 4rpx;
+@uni-border-radius-base: 10rpx;
+@uni-border-radius-lg: 20rpx;
+@uni-border-radius-llg: 50rpx;
+@uni-border-radius-circle: 100%;
+
+/* 水平间距 */
+@uni-spacing-row-sm: 10px;
+@uni-spacing-row-base: 20rpx;
+@uni-spacing-row-lg: 30rpx;
+
+/* 垂直间距 */
+@uni-spacing-col-sm: 8rpx;
+@uni-spacing-col-base: 16rpx;
+@uni-spacing-col-lg: 24rpx;
+
+/* 透明度 */
+@uni-opacity-disabled: 0.3; // 组件禁用态的透明度
+
+/* 文章场景相关 */
+@uni-color-title: #2C405A; // 文章标题颜色
+@uni-font-size-title:40rpx;
+@uni-color-subtitle: #555555; // 二级标题颜色
+@uni-font-size-subtitle:36rpx;
+@uni-color-paragraph: #3F536E; // 文章段落颜色
+@uni-font-size-paragraph:30rpx;
+
+// 过渡
+.transform(@transfrom;){
+	transform: @transfrom;
+}
+
+.transition(@property; @duration; @func; @delay: 0;) {
+	transition-property: @property;
+	transition-duration: @duration;
+	transition-timing-function: @func; 
+	transition-delay: @delay;
+}
+
+// flex布局
+.flexbox(@direction: row; @content: flex-start; @items: stretch; @wrap: nowrap;) {
+	display: flex;
+	flex-direction: @direction;
+	justify-content: @content;
+	align-items: @items;
+	flex-wrap: @wrap;
+}
+
+// flex子元素所占份数
+.flexgrow(@grow: 1;){
+	flex-grow: @grow;
+}
+
+// 多行溢出隐藏,只兼容webkit内核
+.more_line_hidden(@num: 2;){
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @num;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+// 单行溢出隐藏
+.single_line_hidden() {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
