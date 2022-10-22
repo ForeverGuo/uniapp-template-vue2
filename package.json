@@ -1,6 +1,7 @@
 {
-  "name": "uni-vue2-pro",
-  "version": "0.1.0",
+  "name": "{{name}}",
+  "version": "{{version}}",
+  "author": "{{author}}",
   "private": true,
   "scripts": {
     "serve": "npm run dev:h5",
