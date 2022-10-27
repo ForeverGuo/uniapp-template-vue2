@@ -3,6 +3,7 @@
   "version": "{{version}}",
   "author": "{{author}}",
   "private": true,
+  "description": "{{description}}",
   "scripts": {
     "serve": "npm run dev:h5",
     "build": "npm run build:h5",
