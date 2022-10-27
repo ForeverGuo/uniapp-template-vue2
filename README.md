@@ -1,3 +1,10 @@
+## grant-uniapp-cli
+
+```js
+  npm install -g grant-uniapp-cli
+
+  uniapp create my-project
+```
 ## 项目安装
 
 git clone https://github.com/ForeverGuo/uniapp-template-vue2/tree/cli   
