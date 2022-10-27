@@ -1,0 +1,1 @@
+{"version":3,"sources":["uni-app:///src/main.js"],"names":["createPage","Page"],"mappings":";;;;;;;;;;;;AAAA;;AACA;;AACA;;;;AACAA,UAAU,CAACC,wBAAD,CAAV,C","file":"pages/components/details/yemiantiaozhuan.js","sourcesContent":["import 'uni-pages';\nimport Vue from 'vue'\nimport Page from './pages/components/details/yemiantiaozhuan.vue'\ncreatePage(Page)"],"sourceRoot":""}
